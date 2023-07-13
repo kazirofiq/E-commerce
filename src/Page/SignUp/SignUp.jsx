@@ -25,12 +25,12 @@ const SignUp = () => {
     }
 
     return (
-        <section className="relative flex flex-wrap lg:h-screen lg:items-center lg:w-[1299px] mx-auto gap-x-14">
-            <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
+        <section className=" flex flex-wrap  lg:items-center lg:w-[1299px] mx-auto gap-x-14">
+            <div className=" h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
                 <img
                     alt="Welcome"
                     src={image}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className=" inset-0 h-full w-full object-cover"
                 />
             </div>
             <div className="card flex-shrink-0 w-[430px] h-[679px] max-w-sm bg-[#FFFFFF]">

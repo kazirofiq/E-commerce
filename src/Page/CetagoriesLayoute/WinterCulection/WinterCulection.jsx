@@ -116,7 +116,7 @@ const WinterCulection = () => {
             <h2 className='text-center lg:text-[48px] font-bold'>Winter Collection</h2>
             <p className='text-center lg:text-[24px] mb-10'>Buy latest fashion winter collections at best prices in online shopping site StyleHut</p>
             <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between items-center gap-10'>
-                <div className='flex justify-start gap-4 items-center'>
+                <div className='flex lg:block md:block hidden justify-start gap-4 items-center'>
                     <h4>Sort by :</h4>
                     <h4>Popular</h4>
                     <h4>Newest</h4>
