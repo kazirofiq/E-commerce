@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img5 from "../../assets/bg-image/popular-brad/Frame 1000001723.png"
+
 
 
 function SampleNextArrow(props) {
@@ -30,7 +30,7 @@ function SamplePrevArrow(props) {
     );
 }
 
-export default function BestSels() {
+export default function PopularCategories() {
     var settings = {
         // dots: true,
         infinite: true,
@@ -120,38 +120,21 @@ export default function BestSels() {
 
 
     return (
-        <div>
-            <h2 className="text-center lg:text-[36px] font-bold">Best Sales</h2>
-            <p className="text-center mb-5">Shop our new arrivals from popular brands</p>
-        <div className="caurosle relative lg:block md:block lg:w-[1299px] mx-auto my-10 hidden">
+        <div className="caurosle relative lg:block md:block hidden">
             <Slider {...settings}>
                 {
                     newProduct.map(product =>
                         // eslint-disable-next-line react/jsx-key
                         <div>
-                    <div className="hover:relative">
-                    <div className="hovere:lg:absolute w-full hover:lg:z-[-9999]"><img className='lg:w-[95%] w-full' src={product.image} alt="" /></div>
-                    <div className=''>
-                   <p className='bg-[#FA541C] hidden hover:block px-[115px] py-4 cursor-pointer shadow-lg hover:lg:absolute hover:lg:z-[9999] hover:lg:mt-[344px]'>Shop Now</p>
-                    <h2>Calvin Klein Hoodie</h2>
-                    <div className='flex justify-between mr-2 items-center gap-4'>
-                        <img src={img5} alt="" />
-                        <p className='text-[#FA541C] lg:text-[24px] font-bold'>$270.00</p>
-                    </div>
-                   </div>
-                </div>
-                            {/* <div className="h-56 border w-64 rounded-2xl ml-4 shadow ">
-                                <div className="flex justify-between mx-7 mt-5">
-                                    <p className="bg-lime-600 text-white font-bold text-sm px-1 rounded-lg">Fresh</p>
-                                    <p className="bg-red-600 text-white font-bold text-sm px-1 rounded-lg">Sale 30%</p>
-                                </div>
-                                <img className="h-4/5 ml-4 w-52" src={product.image} alt=""></img>
-                            </div> */}
+                            <div className='hover:shadow-xl rounded-md py-5'>
+                            <img className='mx-auto' src={product.image} alt="" />
+                            <h4 className='text-center mt-4 text-[24px] cursor-pointer text-[#383838] font-bold hover:text-[#FA541C]'>Winter Quality jacket</h4>
+                            <p className='text-center'>(390 items)</p>
+                        </div>
                         </div >
                     )
                 }
             </Slider>
-        </div>
         </div>
     );
 }

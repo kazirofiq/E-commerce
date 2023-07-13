@@ -13,6 +13,7 @@ const Navbar = () => {
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/bestsels">Best sels</Link></li>
               <li><Link to="/hompages">Home Page</Link></li>
+              <li><Link to="/dashboard">Dashboard</Link></li>
               
               {/* { user?.uid ? 
                   <>
