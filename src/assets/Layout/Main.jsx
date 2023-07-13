@@ -13,26 +13,26 @@ const Main = () => {
         setLoader(true)
         setTimeout(() => {
             setLoader(false)
-        }, 1000)
+        }, 500)
     }, [])
     return (
         <div >
-        {
-            loader ?
-                <div className="flex justify-center items-center h-screen">
-                    <ClipLoader color="#0000ff" size="50" loader={loader} />
-                </div>
-                :
-                <div>
-                    <TopNavbar></TopNavbar>
-                    <Navbar></Navbar>
-                    <div className='bottom'>
-                        <Outlet></Outlet>
+            {
+                loader ?
+                    <div className="flex justify-center items-center h-screen">
+                        <ClipLoader color="#0000ff" size="50" loader={loader} />
                     </div>
-                    <Footer></Footer>
-                </div>
-        }
-    </div>
+                    :
+                    <div>
+                        <TopNavbar></TopNavbar>
+                        <Navbar></Navbar>
+                        <div className='bottom'>
+                            <Outlet></Outlet>
+                        </div>
+                        <Footer></Footer>
+                    </div>
+            }
+        </div>
     );
 };
 
