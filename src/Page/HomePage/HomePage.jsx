@@ -10,6 +10,7 @@ import LetestBlog from './LetestBlog/LetestBlog';
 import NewsLetter from './NewsLetter/NewsLetter';
 
 
+
 const HomePage = () => {
     return (
         <div className='lg:w-[1299px] mx-auto'>
@@ -21,7 +22,6 @@ const HomePage = () => {
             <BestSels></BestSels>
             <LetestBlog></LetestBlog>
             <NewsLetter></NewsLetter>
-            
         </div>
     );
 };
