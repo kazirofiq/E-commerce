@@ -8,6 +8,10 @@ import SignUp from "../../Page/SignUp/SignUp";
 import BrandDetails from "../../Page/BrandDetails/BrandDetails";
 import Layoute from "../../Page/CetagoriesLayoute/Layoute/Layoute";
 import Dashboard from "../../Page/CetagoriesLayoute/Dashboard/Dashboard";
+import Bloglayoute from "../../Page/BlogLayoute/Bloglayoute/Bloglayoute";
+import BlogDashboard from "../../Page/BlogLayoute/BlogDashboard/BlogDashboard";
+import Fashionhut from "../../Page/BlogLayoute/Fashionhut/Fashionhut";
+
 
 const router = createBrowserRouter([
     {
@@ -53,6 +57,23 @@ const router = createBrowserRouter([
         //     path: '/dashboard/document',
         //     element: <Document></Document>
         //   },
+          
+          
+        ]
+      },
+    {
+        path: '/blogdashboard',
+        element: <Bloglayoute></Bloglayoute>,
+        children: [
+          {
+            path: '/blogdashboard',
+            element: <BlogDashboard></BlogDashboard>
+          },
+          
+          {
+            path: '/blogdashboard/fashinhut',
+            element: <Fashionhut></Fashionhut>
+          },
           
           
         ]

@@ -1,9 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import img1 from "../../../assets/bg-image/winter-shirt/Group 1000001797.png"
-import img2 from "../../../assets/bg-image/winter-shirt/list.png"
-import './WinterCulection.css'
-const WinterCulection = () => {
+
+const BlogDashboard = () => {
     const winterProduct = [
         {
             id: 1,
@@ -113,23 +111,10 @@ const WinterCulection = () => {
     ]
     return (
         <div className='border-das lg:mx-10 px-4'>
-            <h2 className='text-center lg:text-[48px] font-bold'>Winter Collection</h2>
+            <h2 className=' lg:text-[48px] font-bold'>Winter Collection</h2>
             <p className='text-center lg:text-[24px] mb-10'>Buy latest fashion winter collections at best prices in online shopping site StyleHut</p>
-            <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between items-center gap-10'>
-                <div className='lg:flex md:flex hidden  justify-start gap-4 items-center'>
-                    <h4>Sort by :</h4>
-                    <h4>Popular</h4>
-                    <h4>Newest</h4>
-                    <h4>Top Reviews</h4>
-                </div>
-                <div className='flex justify-end gap-4 items-center'>
-                    <h2>View :</h2>
-                    <img src={img1} alt="" />
-                    <img src={img2} alt="" />
-                </div>
-            </div>
             <div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4 my-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 my-10'>
             {
                     winterProduct.map(product =>
                         // eslint-disable-next-line react/jsx-key
@@ -163,4 +148,4 @@ const WinterCulection = () => {
     );
 };
 
-export default WinterCulection;
+export default BlogDashboard;
