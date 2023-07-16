@@ -3,6 +3,9 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
 import searchbox from '../../bg-image/home-page/Search box.png';
+import { Menu, Transition } from '@headlessui/react';
+import { Fragment } from "react";
+import { BiChevronDown } from "react-icons/bi";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -12,11 +15,11 @@ const Navbar = () => {
             .catch(err => console.log(err));
     }
     const menuItems = <React.Fragment>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/bestsels">Best sels</Link></li>
-        <li><Link to="/hompages">Home Page</Link></li>
-        <li><Link to="/brandDetails">Brand Details</Link></li>
-        <div className="form-control mx-5 lg:blok hidden">
+        <li className='text-black'><Link className='text-black' to="/">Home</Link></li>
+        <li className='text-black'><Link className='text-black' to="/bestsels">Best sels</Link></li>
+        <li className='text-black'><Link className='text-black' to="/hompages">Home Page</Link></li>
+        <li className='text-black'><Link className='text-black' to="/brandDetails">Brand Details</Link></li>
+        <div className="form-control mx-5 md:block hidden">
         <div className="flex justify-center items-center">
             <input type="text" placeholder="Search…" className="p-2" />
             <p className="">
@@ -24,7 +27,16 @@ const Navbar = () => {
             </p>
         </div>
         </div>
-        <ul className=" lg:w-[56] relative  ">
+        <details className="dropdown lg:mt-0 md:mt-0 mt-3 md:ml-0 ml-4  w-[92px]">
+        <summary className="flex justify-center items-center text-black  cursor-pointer">Cetagoreis <BiChevronDown></BiChevronDown> </summary>
+        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li><Link className='text-black' to='/blogdashboard/fashinhut'>Blog</Link></li>
+                <li><Link className='text-black' to='/cart'>Cart</Link></li>
+                <li><Link className='text-black' to='/checkout'>Checkout</Link></li>
+                <li><Link className='text-black' to='/contact'>Contuct Us</Link></li>
+        </ul>
+        </details>
+        {/* <ul className=" lg:w-[56] relative  ">
                 <li>
                     <details open>
                     <summary>Cetagories</summary>
@@ -36,12 +48,12 @@ const Navbar = () => {
                     </ul>
                     </details>
                 </li>
-                </ul>
-        <li><Link to="/blogdashboard">Blog</Link></li>
-        <li><Link to="/about">About</Link></li>
+                </ul> */}
+        <li><Link className='text-black' to="/blogdashboard">Blog</Link></li>
+        <li><Link className='text-black' to="/about">About</Link></li>
         {user?.uid ?
             <>
-                <li><button onClick={handleLogout}>Log Out</button></li>
+                <li><button className='text-black' onClick={handleLogout}>Log Out</button></li>
             </>
             :
             <>
