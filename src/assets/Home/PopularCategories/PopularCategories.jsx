@@ -10,7 +10,7 @@ import bg2 from "../../../assets/bg-image/shop-pic/Pink-Color-Girls-Cute-Sweater
 
 const PopularCategories = () => {
     return (
-        <div className='my-10'>
+        <div className='lg:my-10'>
             <div className=''>
                 <h2 className='text-center text-[#212B36] lg:text-[64px] font-bold'>Popular Categories</h2>
                 <p className='text-center text-[#48545E] text-[24px]'>Shop the product of your choice from the popular category</p>

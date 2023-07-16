@@ -1,5 +1,6 @@
 import { useState } from "react";
 import fav from '../../assets/bg-image/best-sels/favdelete.png'
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -246,7 +247,9 @@ const Cart = () => {
         </div>
         <div className="flex-col justify-start items-center gap-5 flex">
             <div className="w-[356.09px] h-[50px] p-4 bg-orange-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
-                <div className="text-neutral-50 text-lg font-medium">Checkout</div>
+                <Link to='/checkout'>
+                <div className="text-neutral-50 text-lg font-medium cursor-pointer">Checkout</div>
+                </Link>
             </div>
             <div className="text-orange-600 text-lg font-medium">Continue Shopping</div>
         </div>

@@ -11,6 +11,10 @@ import Dashboard from "../../Page/CetagoriesLayoute/Dashboard/Dashboard";
 import Bloglayoute from "../../Page/BlogLayoute/Bloglayoute/Bloglayoute";
 import BlogDashboard from "../../Page/BlogLayoute/BlogDashboard/BlogDashboard";
 import Fashionhut from "../../Page/BlogLayoute/Fashionhut/Fashionhut";
+import About from "../../Page/About/About";
+import Cart from "../../Page/Cart/Cart";
+import Checkout from "../../Page/Checkout/Checkout";
+import Contactus from "../../Page/Contactus";
 
 
 const router = createBrowserRouter([
@@ -41,6 +45,22 @@ const router = createBrowserRouter([
             {
                 path: '/brandDetails',
                 element: <BrandDetails></BrandDetails>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/cart',
+                element: <Cart></Cart>
+            },
+            {
+                path: '/checkout',
+                element: <Checkout></Checkout>
+            },
+            {
+                path: '/contact',
+                element: <Contactus></Contactus>
             }
         ]
     },

@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
+import searchbox from '../../bg-image/home-page/Search box.png';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -11,12 +12,33 @@ const Navbar = () => {
             .catch(err => console.log(err));
     }
     const menuItems = <React.Fragment>
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/bestsels">Best sels</Link></li>
         <li><Link to="/hompages">Home Page</Link></li>
         <li><Link to="/brandDetails">Brand Details</Link></li>
-        <li><Link to="/dashboard">Cetagories</Link></li>
+        <div className="form-control mx-5 lg:blok hidden">
+        <div className="flex justify-center items-center">
+            <input type="text" placeholder="Search…" className="p-2" />
+            <p className="">
+             <img className='w-[75%] cursor-pointer' src={searchbox} alt="" />
+            </p>
+        </div>
+        </div>
+        <ul className=" lg:w-[56] relative  ">
+                <li>
+                    <details open>
+                    <summary>Cetagories</summary>
+                    <ul className=' lg:w-[100%] rounded-md absolute bg-slate-300  z-[9999]'>
+                        <li><Link to='/blogdashboard/fashinhut'>Blog</Link></li>
+                        <li><Link to='/cart'>Cart</Link></li>
+                        <li><Link to='/checkout'>Checkout</Link></li>
+                        <li><Link to='/contact'>Contuct Us</Link></li>
+                    </ul>
+                    </details>
+                </li>
+                </ul>
         <li><Link to="/blogdashboard">Blog</Link></li>
+        <li><Link to="/about">About</Link></li>
         {user?.uid ?
             <>
                 <li><button onClick={handleLogout}>Log Out</button></li>
@@ -39,16 +61,15 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Workloads</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
             </div>
-            <label htmlFor="dashboard-drawer" tabIndex={2} className="btn btn-ghost lg:hidden">
+            {/* <label htmlFor="dashboard-drawer" tabIndex={2} className="btn btn-ghost lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </label>
+            </label> */}
         </div>
     );
 };
