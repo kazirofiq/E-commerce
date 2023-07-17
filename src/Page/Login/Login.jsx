@@ -43,9 +43,9 @@ const Login = () => {
                 />
             </div>
             <div className="card flex-shrink-0 w-[430px] h-[679px] max-w-sm bg-[#FFFFFF]">
-                <div className='h-[679px] '>
+                <div className='h-[679px]  '>
                     <div className='lg:w-[430px] w-full'>
-                        <h2 className='text-5xl font-bold'>Login</h2>
+                        <h2 className='lg:text-5xl font-bold'>Login</h2>
                         <h3 className='text-xl font-semibold mt-4'>Welcome back! Please enter your details.</h3>
                         <form onSubmit={handleSubmit(handleLogin)}>
                             <div className="w-full max-w-xs mt-10">

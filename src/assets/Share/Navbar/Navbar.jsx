@@ -41,7 +41,7 @@ const Navbar = () => {
             <details className="dropdown ">
         <summary className="flex justify-center items-center   cursor-pointer">Cetagoreis <BiChevronDown></BiChevronDown> </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                <li><Link className='text-black' to='/blogdashboard/fashinhut'>Blog</Link></li>
+                <li><Link className='text-black' to='/blogdashboard/fashinhut'>Blog Details</Link></li>
                 <li><Link className='text-black' to='/cart'>Cart</Link></li>
                 <li><Link className='text-black' to='/checkout'>Checkout</Link></li>
                 <li><Link className='text-black' to='/contact'>Contuct Us</Link></li>
