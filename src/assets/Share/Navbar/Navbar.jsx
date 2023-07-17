@@ -13,9 +13,20 @@ const Navbar = () => {
             .catch(err => console.log(err));
     }
     const menuItems = <React.Fragment>
-        <li className='text-black'><Link className='text-black' to="/">Home</Link></li>
+        <li>
+            <div>
+            <details className="dropdown ">
+        <summary className="flex justify-center items-center   cursor-pointer">Home<BiChevronDown></BiChevronDown> </summary>
+        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+        <li className='text-black'><Link className='text-black' to="/">Home1</Link></li>
+        <li className='text-black'><Link className='text-black' to="/hompages">Home2</Link></li>
+        </ul>
+        </details>
+            </div>
+        </li>
+        
         <li className='text-black'><Link className='text-black' to="/bestsels">Best sels</Link></li>
-        <li className='text-black'><Link className='text-black' to="/hompages">Home Page</Link></li>
+        
         <li className='text-black'><Link className='text-black' to="/brandDetails">Brand Details</Link></li>
         <div className="form-control mx-5 md:block hidden">
         <div className="flex justify-center items-center">

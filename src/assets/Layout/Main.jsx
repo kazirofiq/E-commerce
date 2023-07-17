@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Share/Footer/Footer';
 import { ClipLoader } from 'react-spinners';
 import TopNavbar from '../Share/TopNavbar/TopNavbar';
+import FooterBttom from '../Share/FooterBttom/FooterBttom';
 
 const Main = () => {
     const [loader, setLoader] = useState(false);
@@ -30,6 +31,7 @@ const Main = () => {
                             <Outlet></Outlet>
                         </div>
                         <Footer></Footer>
+                        <FooterBttom></FooterBttom>
                     </div>
             }
         </div>
