@@ -9,7 +9,7 @@ const Bloglayoute = () => {
     return (
         <div>
         <Navbar></Navbar>
-        <div className='ml-4'>
+        <div className='ml-4 md:block hidden'>
             <ul className="menu relative lg:w-[56px] rounded-box">
                 <li>
                     <details open>

@@ -3,8 +3,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
 import searchbox from '../../bg-image/home-page/Search box.png';
-import { Menu, Transition } from '@headlessui/react';
-import { Fragment } from "react";
 import { BiChevronDown } from "react-icons/bi";
 
 const Navbar = () => {
@@ -27,8 +25,10 @@ const Navbar = () => {
             </p>
         </div>
         </div>
-        <details className="dropdown lg:mt-0 md:mt-0 mt-3 md:ml-0 ml-4  w-[92px]">
-        <summary className="flex justify-center items-center text-black  cursor-pointer">Cetagoreis <BiChevronDown></BiChevronDown> </summary>
+        <li>
+            <div>
+            <details className="dropdown ">
+        <summary className="flex justify-center items-center   cursor-pointer">Cetagoreis <BiChevronDown></BiChevronDown> </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                 <li><Link className='text-black' to='/blogdashboard/fashinhut'>Blog</Link></li>
                 <li><Link className='text-black' to='/cart'>Cart</Link></li>
@@ -36,6 +36,9 @@ const Navbar = () => {
                 <li><Link className='text-black' to='/contact'>Contuct Us</Link></li>
         </ul>
         </details>
+            </div>
+        </li>
+        
         {/* <ul className=" lg:w-[56] relative  ">
                 <li>
                     <details open>
