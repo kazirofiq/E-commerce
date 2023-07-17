@@ -5,6 +5,7 @@ import shirt from '../../assets/bg-image/shop-pic/t-shirt.png'
 import tusk from '../../assets/bg-image/shop-pic/Mask Group.png'
 import musk from '../../assets/bg-image/shop-pic/Mask Grou (1).png'
 import main from '../../assets/bg-image/shop-pic/placeholder.png'
+import ProductRelated from '../BlogLayoute/RelaytedProduct/ProductRelated/ProductRelated';
 
 const BrandDetails = () => {
     return (
@@ -583,6 +584,7 @@ const BrandDetails = () => {
                     </div>
                 </div>
             </section> */}
+            <ProductRelated></ProductRelated>
         </div >
     );
 };
