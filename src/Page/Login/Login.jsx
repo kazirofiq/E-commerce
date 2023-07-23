@@ -35,14 +35,14 @@ const Login = () => {
 
     return (
         <section className=" flex flex-wrap  lg:items-center lg:w-[1299px] mx-auto gap-x-14">
-            <div className=" h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
+            <div className="  h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
                 <img
                     alt="Welcome"
                     src={image}
                     className=" inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div className="card flex-shrink-0 w-[430px] h-[679px] max-w-sm bg-[#FFFFFF]">
+            <div className=" card flex-shrink-0 lg:w-[430px] w-[95%] h-[679px] max-w-sm bg-[#FFFFFF]">
                 <div className='h-[679px]  '>
                     <div className='lg:w-[430px] w-full'>
                         <h2 className='lg:text-5xl font-bold'>Login</h2>

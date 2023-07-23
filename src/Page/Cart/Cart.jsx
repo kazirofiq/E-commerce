@@ -225,28 +225,28 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[400px] h-[350px] mx-auto p-6 bg-neutral-50 rounded-2xl border border-neutral-200 flex-col justify-start items-start gap-2.5 inline-flex">
+      <div className="lg:max-w-[400px]  w-[95%] lg:h-[350px] mx-auto p-6 bg-neutral-50 rounded-2xl border border-neutral-200 flex-col justify-start items-start gap-2.5 inline-flex">
     <div className="flex-col justify-start items-start gap-8 flex">
         <div className="flex-col justify-start items-start gap-5 flex">
             <div className="text-neutral-700 text-2xl font-medium">My Orders</div>
             <div className="flex-col justify-start items-start gap-2.5 flex">
-                <div className="w-[356px] h-9 relative">
+                <div className="lg:w-[356px] w-full h-9 relative">
                     <div className="left-0 top-[4px] absolute text-neutral-400 text-lg font-normal">Subtotal</div>
-                    <div className="left-[262px] top-0 absolute text-right text-gray-800 text-2xl font-normal">$760.00</div>
+                    <div className="lg:left-[262px] left-[150px] top-0 absolute text-right text-gray-800 text-2xl font-normal">$760.00</div>
                 </div>
-                <div className="w-[356px] h-9 relative">
+                <div className="lg:w-[356px] w-[95%] h-9 relative">
                     <div className="left-0 top-[4.50px] absolute text-neutral-400 text-lg font-normal">Shipping Fee</div>
-                    <div className="left-[269px] top-0 absolute text-right text-gray-800 text-2xl font-normal">$120.00</div>
+                    <div className="lg:left-[269px] left-[150px] top-0 absolute text-right text-gray-800 text-2xl font-normal">$120.00</div>
                 </div>
-                <div className="w-[356px] h-[0px] opacity-50 border border-neutral-400"></div>
-                <div className="w-[356px] h-9 relative">
+                <div className="lg:w-[356px] w-[95%] h-[0px] opacity-50 border border-neutral-400"></div>
+                <div className="lg:w-[356px] w-full h-9 relative">
                     <div className="left-0 top-[4px] absolute text-neutral-400 text-lg font-medium">Total</div>
-                    <div className="left-[257px] top-0 absolute text-right text-orange-600 text-2xl font-medium">$880.00</div>
+                    <div className="lg:left-[257px] left-[150px] top-0 absolute text-right text-orange-600 text-2xl font-medium">$880.00</div>
                 </div>
             </div>
         </div>
         <div className="flex-col justify-start items-center gap-5 flex">
-            <div className="w-[356.09px] h-[50px] p-4 bg-orange-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
+            <div className="lg:w-[356.09px] w-[80%] h-[50px] p-4 bg-orange-600 rounded-lg justify-center items-center gap-2.5 inline-flex">
                 <Link to='/checkout'>
                 <div className="text-neutral-50 text-lg font-medium cursor-pointer">Checkout</div>
                 </Link>
@@ -254,7 +254,7 @@ const Cart = () => {
             <div className="text-orange-600 text-lg font-medium">Continue Shopping</div>
         </div>
     </div>
-</div>3
+</div>
     </div>
   );
 };

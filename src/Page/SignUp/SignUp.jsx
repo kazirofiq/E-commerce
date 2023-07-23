@@ -33,7 +33,7 @@ const SignUp = () => {
                     className=" inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div className="card flex-shrink-0 w-[430px] h-[679px] max-w-sm bg-[#FFFFFF]">
+            <div className="card flex-shrink-0 lg:w-[430px] w-[95%] h-[679px] max-w-sm bg-[#FFFFFF]">
                 <div className='h-[679px] '>
                     <div className='lg:w-[430px] w-full'>
                         <h2 className='text-4xl font-bold'>Create an account</h2>
